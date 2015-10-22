@@ -1,0 +1,78 @@
+body {
+    padding-top: 64px;
+}
+
+.centering {
+  text-align: center;
+}
+
+.headLogo {
+  margin-top: 10vh;
+  max-width: 500px;
+  min-width: 200px;
+  padding: 8px;
+  width: 100%;
+}
+
+.welcomeText {
+  font-size: 36px;
+}
+
+.inventoryTable {
+	align: right;
+	width: 400px;
+	margin: 0px auto;
+}
+
+.inventoryTable thead {
+	font-size: 20px;
+	color: white;
+	background-color: black;
+	display: block;
+}
+
+.inventoryTable tbody {
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	overflow-y: scroll;
+	max-height: 353px;
+}
+
+.inventoryTable tbody tr:nth-of-type(even) {
+	background-color: #E0E0EB;
+}
+
+.inventoryTable th,
+.inventoryTable td {
+	text-align: center;
+	height: 44px;
+}
+
+.inventoryTable th:nth-of-type(1),
+.inventoryTable td:nth-of-type(1) {
+	width: 300px;
+}
+
+.inventoryTable th:nth-of-type(2),
+.inventoryTable td:nth-of-type(2) {
+	width: 100px;
+}
+
+.inventoryTable thead th {
+	border-right: 1px solid #E0E0EB;
+}
+
+.inventoryTable thead th:last-child {
+	border-right: 1px solid black;
+}
+
+.inventoryTable td {
+	border: 1px solid black;
+}
+
+@media only screen and (max-width: 500px) {
+  .headLogo {
+    margin-top: 1vh;
+  }
+}

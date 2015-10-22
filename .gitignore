@@ -1,0 +1,7 @@
+credentials.txt
+*.swp
+node_modules
+vendor
+*.swo
+*.log
+composer.lock

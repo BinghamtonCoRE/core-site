@@ -1,0 +1,18 @@
+{
+  "scripts": {},
+  "dependencies": {
+    "browserify": "~9.0.8",
+    "gulp": "^3.9.0",
+    "react": "~0.13.1",
+    "react-dom": "~0.14.0",
+    "react-tools": "~0.13.1",
+    "reactify": "~1.1.0",
+    "vinyl-source-stream": "^1.1.0",
+    "xhpjs": "~1.0.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+	"minimum-stability": "dev",
+	"require": {
+		"facebook/xhp-lib": "2.x",
+		"hhvm/xhp-bootstrap": "dev-master",
+		"hhvm/xhp-js": "~1.0.0"
+	},
+	"autoload": {
+        "classmap": ["lib/", "api/"]
+    }
+}
