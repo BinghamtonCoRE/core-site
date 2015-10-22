@@ -24,5 +24,5 @@ class Inventory extends BasePage {
 
 }
 
-//$page = new Inventory();
-//print $page->getPage();
+$page = new Inventory();
+print $page->getPage();
