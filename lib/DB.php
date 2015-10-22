@@ -4,15 +4,13 @@ class DB {
   private static ?object $mysqli = null;
 
   public static function initialize() {
-		$json = json_decode(file_get_contents('credentials.txt'));
-		var_dump($json);
+		$json = json_decode(file_get_contents('credentials.txt'), true);
     self::$mysqli = mysqli_connect(
       "localhost", 
       $json['user'], 
       $json['password'], 
       "CoREtex",
     );
-    self::$mysqli->autocommit(false);
   }
 
   public static function query(string $queryString) {
