@@ -4,7 +4,11 @@ class DB {
   private static ?object $mysqli = null;
 
   public static function initialize() {
-		$json = json_decode(file_get_contents('credentials.txt'), true);
+		$fileContents = file_get_contents('credentials.txt');
+		if ($fileContents === false) {
+			return;
+		}
+		$json = json_decode($fileContents, true);
     self::$mysqli = mysqli_connect(
       "localhost", 
       $json['user'], 
@@ -24,7 +28,9 @@ class DB {
   }
 
   public static function deinitialize() {
-    self::$mysqli?->close();
+		if (self::$mysqli !== null) {
+			self::$mysqli->close();
+		}
   }
 
 }
