@@ -9,7 +9,9 @@ class :ui:navbar extends :x:element {
 
 	protected function render(): :nav {
     $navItems = array();
+		$requestUri = $_SERVER["REQUEST_URI"];
     foreach ($this->:content as $itemTitle => $link) {
+			$link = preg_replace("/(\/[^\/]*)$/", $link, $requestUri);
       $navItems[] =
         <li class={!strcasecmp($this->:page-title, $itemTitle)
           ? 'true' 
