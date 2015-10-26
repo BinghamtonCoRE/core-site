@@ -3,6 +3,7 @@ var gulp = require('gulp');
 var glob = require('glob');
 var reactify = require('reactify');
 var source = require('vinyl-source-stream');
+var shell = require('gulp-shell');
 
 /*
   gulp browserify:
@@ -24,3 +25,13 @@ gulp.task('browserify', function() {
 			.pipe(source('bundle.js'))
 			.pipe(gulp.dest('./build/'));
 });
+
+gulp.task('install-php', shell.task([
+	'hhvm composer.phar install'
+]));
+
+gulp.task('autoload', shell.task([
+	'hhvm composer.phar dump-autoload'
+]));
+
+gulp.task('default', ['install-php','browserify']);
