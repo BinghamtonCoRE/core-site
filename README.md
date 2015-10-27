@@ -6,3 +6,5 @@
 
 # To build:
     gulp
+
+[Click here for the meeting notes!](https://www.dropbox.com/sh/9vfyw15o0ukwcax/AADHhLOoGBXG0HiZ_72J9rmTa?dl=0)
