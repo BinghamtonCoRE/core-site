@@ -88,6 +88,7 @@ abstract class BasePage {
       'About' => '/about.php',
 			'Contact' => '/contact.php',
 			'Join' => '/join.php',
+			'Test' => '/test.php'
     );
     return
       <ui:navbar
