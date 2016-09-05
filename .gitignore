@@ -5,3 +5,4 @@ vendor
 *.swo
 *.log
 composer.lock
+build/*

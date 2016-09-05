@@ -35,7 +35,7 @@ class :ui:navbar extends :x:element {
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="/">{self::TITLE}</a>
+	          <a class="navbar-brand" href="#">{self::TITLE}</a>
 	        </div>
 	        <div id="navbar" class="collapse navbar-collapse">
 	          <ul class="nav navbar-nav">
