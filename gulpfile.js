@@ -34,4 +34,8 @@ gulp.task('autoload', shell.task([
 	'hhvm composer.phar dump-autoload'
 ]));
 
-gulp.task('default', ['install-php','browserify']);
+gulp.task('serve', shell.task([
+    'hhvm -m server -p 8080'
+]));
+
+gulp.task('default', ['install-php','browserify','serve']);
